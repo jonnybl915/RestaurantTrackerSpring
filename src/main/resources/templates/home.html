@@ -25,7 +25,7 @@
     {{#restaurants}}
     <li><b>{{name}}</b> - {{location}} - {{rating}}/5 - {{comment}}
         <form action="/delete-restaurant" method="post" style="display: inline-block;">
-            <input type="hidden" name="id" value="{{id}}" placeholder="#"/>
+            <input type="hidden" name="id" value="{{id}}"/>
             <button type="submit">Delete Restaurant</button>
         </form>
     </li>
