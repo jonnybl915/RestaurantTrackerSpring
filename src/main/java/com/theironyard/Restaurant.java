@@ -10,8 +10,6 @@ import javax.persistence.*;
 public class Restaurant {
     @Id
     @GeneratedValue
-
-    @Column(nullable = false)
     int id;
 
     @Column(nullable = false)
