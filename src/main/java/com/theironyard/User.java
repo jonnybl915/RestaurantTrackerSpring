@@ -18,8 +18,13 @@ public class User {
     @Column(nullable = false) //requires that password NOT be null
     String password;
 
+    public User() {
+    }
+
     public User(String name, String password) { //don't need the id in the constructor bc the database will generate and store id
         this.name = name;
         this.password = password;
+
+
     }
 }
